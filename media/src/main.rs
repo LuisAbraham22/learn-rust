@@ -3,10 +3,6 @@ mod content;
 use content::catalog::Catalog;
 use content::media::Media;
 
-fn print_media(media: Media) {
-    println!("{:#?}", media)
-}
-
 fn main() {
     let book = Media::Book {
         title: String::from("Crafting Interpreters"),
